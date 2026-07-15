@@ -42,7 +42,7 @@ export function initMenu({ reducedMotion }) {
         </figure>
         <div class="menu-card__body">
           <p class="menu-card__cat"><span>0${i + 1}</span>${g.name}</p>
-          <ul class="menu-list">
+          <ul class="menu-list${g.dishes.length >= 6 ? " menu-list--cols" : ""}">
             ${g.dishes.map((d) => `
               <li class="dish"><span class="dish__name">${d}</span></li>`).join("")}
           </ul>
