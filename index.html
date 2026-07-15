@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeito Mineiro · Cozinha afetiva em Curitiba</title>
+  <meta name="description" content="Há mais de uma década resgatando receitas que lembram a cozinha da avó. Buffet no almoço, de segunda a sábado, no Centro de Curitiba." />
+  <meta property="og:title" content="Jeito Mineiro · Cozinha afetiva em Curitiba" />
+  <meta property="og:description" content="Comida caseira, saudável e farta. Almoço de segunda a sábado." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0d0b09" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Grain overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <p class="preloader__word" data-preloader-word>fogão a lenha</p>
+      <p class="preloader__count"><span data-preloader-count>0</span></p>
+    </div>
+    <div class="preloader__panel preloader__panel--a"></div>
+    <div class="preloader__panel preloader__panel--b"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="nav__brand" href="#casa" aria-label="Jeito Mineiro, voltar ao início">
+        <svg class="nav__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M6 24c0-7 4-15 10-15s10 8 10 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M11 24c0-4.5 2.2-9 5-9s5 4.5 5 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".55"/>
+          <line x1="4" y1="24" x2="28" y2="24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="nav__wordmark">Jeito&nbsp;Mineiro</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#unidades">Unidades</a>
+      </nav>
+
+      <div class="nav__right">
+        <p class="status" data-status>
+          <span class="status__dot" aria-hidden="true"></span>
+          <span class="status__text"></span>
+        </p>
+        <a class="btn btn--small" href="https://wa.me/554198210190" target="_blank" rel="noopener" data-magnetic>
+          <span class="btn__label">WhatsApp</span>
+        </a>
+        <button class="nav__burger" data-burger aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-overlay">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Fullscreen mobile menu -->
+  <div class="overlay" id="menu-overlay" data-overlay aria-hidden="true">
+    <nav class="overlay__links" aria-label="Menu">
+      <a href="#casa" data-overlay-link><em>01</em>Casa</a>
+      <a href="#cardapio" data-overlay-link><em>02</em>Cardápio</a>
+      <a href="#manifesto" data-overlay-link><em>03</em>Manifesto</a>
+      <a href="#unidades" data-overlay-link><em>04</em>Unidades</a>
+    </nav>
+    <div class="overlay__foot">
+      <p>Seg – Sáb · Almoço</p>
+      <a href="https://instagram.com/jeitomineirorestaurante" target="_blank" rel="noopener">@jeitomineirorestaurante</a>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="casa">
+      <canvas class="hero__canvas" data-hero-canvas aria-hidden="true"></canvas>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-hero-eyebrow>
+          <span>Restaurante</span>
+          <span class="hero__eyebrow-line" aria-hidden="true"></span>
+          <span>Curitiba, PR</span>
+        </p>
+
+        <h1 class="hero__title">
+          <span class="hero__line" data-hero-line>Jeito</span>
+          <span class="hero__line hero__line--italic" data-hero-line>Mineiro</span>
+        </h1>
+
+        <p class="hero__lede" data-hero-lede>
+          Cozinha afetiva servida no almoço, de segunda a sábado.
+          Receitas que vieram da casa da avó e nunca mais foram embora.
+        </p>
+
+        <div class="hero__actions" data-hero-actions>
+          <a class="btn btn--primary" href="#cardapio" data-magnetic>
+            <span class="btn__label">Ver o cardápio do dia</span>
+          </a>
+          <a class="btn btn--ghost" href="https://wa.me/554198210190" target="_blank" rel="noopener" data-magnetic>
+            <span class="btn__label">Chamar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- rotating stamp -->
+      <div class="hero__stamp" data-hero-stamp aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs>
+            <path id="stamp-circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
+          </defs>
+          <text>
+            <textPath href="#stamp-circle">comida de verdade · feita todo dia · desde a casa da avó ·</textPath>
+          </text>
+          <path d="M46 72c0-8 6-18 14-18s14 10 14 18" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <line x1="42" y1="72" x2="78" y2="72" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="hero__foot" data-hero-foot>
+        <p class="hero__address">R. Riachuelo, 102 · Centro</p>
+        <div class="hero__scroll" aria-hidden="true">
+          <span>role</span>
+          <span class="hero__scroll-line"></span>
+        </div>
+        <p class="hero__hours">Seg – Sáb · 11h → 14h30</p>
+      </div>
+    </section>
+
+    <!-- ======================= TICKER ======================= -->
+    <div class="ticker" data-ticker aria-hidden="true">
+      <div class="ticker__row" data-ticker-row>
+        <div class="ticker__track">
+          <span>Feijão tropeiro</span><i>✦</i><span>Torresmo</span><i>✦</i><span>Couve na manteiga</span><i>✦</i><span>Frango com quiabo</span><i>✦</i><span>Tutu de feijão</span><i>✦</i><span>Costelinha ao barbecue</span><i>✦</i>
+          <span>Feijão tropeiro</span><i>✦</i><span>Torresmo</span><i>✦</i><span>Couve na manteiga</span><i>✦</i><span>Frango com quiabo</span><i>✦</i><span>Tutu de feijão</span><i>✦</i><span>Costelinha ao barbecue</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================= CARDÁPIO ======================= -->
+    <section class="menu" id="cardapio">
+      <div class="menu__head">
+        <p class="label" data-reveal>Cardápio da semana</p>
+        <h2 class="menu__title" data-split>O que a cozinha <em>acordou</em> fazendo</h2>
+        <p class="menu__hint" data-reveal>O cardápio muda conforme a feira do dia. Este é o ritmo da semana.</p>
+      </div>
+
+      <div class="menu__tabs" role="tablist" aria-label="Dias da semana" data-menu-tabs></div>
+
+      <div class="menu__panel" data-menu-panel role="tabpanel" tabindex="0"></div>
+
+      <p class="menu__foot" data-reveal>
+        Buffet servido no almoço · Segunda a sábado · 11h às 14h30
+      </p>
+    </section>
+
+    <!-- ======================= MANIFESTO ======================= -->
+    <section class="manifesto" id="manifesto">
+      <div class="manifesto__head">
+        <p class="label" data-reveal>O manifesto</p>
+      </div>
+
+      <div class="manifesto__body">
+        <h2 class="manifesto__statement" data-split>
+          Panela conta história. Fogo baixo, paciência e a receita que
+          atravessou gerações. <em>Comida caseira, saudável e farta,</em>
+          todo santo dia.
+        </h2>
+
+        <div class="manifesto__images" aria-hidden="false">
+          <figure class="manifesto__img" data-parallax="-12">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80&auto=format&fit=crop" alt="Panela de ferro com comida caseira no fogo" loading="lazy" />
+          </figure>
+          <figure class="manifesto__img" data-parallax="10">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80&auto=format&fit=crop" alt="Cozinheiro preparando prato na cozinha" loading="lazy" />
+          </figure>
+          <figure class="manifesto__img" data-parallax="-6">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop" alt="Mesa posta do restaurante" loading="lazy" />
+          </figure>
+        </div>
+
+        <p class="manifesto__note" data-reveal>
+          Há mais de uma década, o Jeito Mineiro resgata receitas típicas
+          brasileiras que lembram a cozinha da avó: simples, generosas,
+          cheias de sabor. Em Curitiba, mineiridade se serve no prato.
+        </p>
+
+        <div class="selos" data-reveal-group>
+          <p class="selo">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.5" fill="currentColor"/></svg>
+            Selo Agir Sustentável
+          </p>
+          <p class="selo">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.5" fill="currentColor"/></svg>
+            Patrocinador da equipe de ciclismo Capital Speed Curitiba
+          </p>
+        </div>
+
+        <ol class="values" data-reveal-group>
+          <li class="values__item">
+            <span class="values__index">01</span>
+            <h3>Respeito</h3>
+            <p>Pelo indivíduo, quem come e quem cozinha.</p>
+          </li>
+          <li class="values__item">
+            <span class="values__index">02</span>
+            <h3>Simpatia</h3>
+            <p>E agilidade no serviço, do balcão à mesa.</p>
+          </li>
+          <li class="values__item">
+            <span class="values__index">03</span>
+            <h3>Transparência</h3>
+            <p>Ética nos preços e nos serviços, sempre.</p>
+          </li>
+          <li class="values__item">
+            <span class="values__index">04</span>
+            <h3>Melhoria contínua</h3>
+            <p>Todo dia um pouco melhor que ontem.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= GALERIA ======================= -->
+    <section class="galeria" aria-label="Fotos da casa">
+      <figure class="galeria__item" data-parallax="-8">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900&q=80&auto=format&fit=crop" alt="Pães frescos saindo do forno" loading="lazy" />
+        <figcaption>Pão da casa</figcaption>
+      </figure>
+      <figure class="galeria__item" data-parallax="10">
+        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=900&q=80&auto=format&fit=crop" alt="Ingredientes frescos da feira sobre a bancada" loading="lazy" />
+        <figcaption>Feira do dia</figcaption>
+      </figure>
+      <figure class="galeria__item" data-parallax="-14">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&q=80&auto=format&fit=crop" alt="Pratos servidos na mesa" loading="lazy" />
+        <figcaption>Buffet farto</figcaption>
+      </figure>
+      <figure class="galeria__item" data-parallax="6">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&q=80&auto=format&fit=crop" alt="Bowls de comida caseira variada" loading="lazy" />
+        <figcaption>Todo santo dia</figcaption>
+      </figure>
+    </section>
+
+    <!-- ======================= UNIDADES ======================= -->
+    <section class="casas" id="unidades">
+      <div class="casas__head">
+        <p class="label" data-reveal>As casas</p>
+        <h2 class="casas__title" data-split>Duas cozinhas, <em>o mesmo</em> tempero</h2>
+      </div>
+
+      <div class="casas__grid" data-reveal-group>
+        <article class="casa-card" data-tilt>
+          <figure class="casa-card__img">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&q=80&auto=format&fit=crop" alt="Salão do restaurante no Centro" loading="lazy" />
+          </figure>
+          <div class="casa-card__body">
+            <p class="casa-card__tag">Centro</p>
+            <h3>Riachuelo</h3>
+            <address>R. Riachuelo, 102, sobreloja<br />Centro · Curitiba, PR</address>
+            <div class="casa-card__meta">
+              <a href="tel:+554132233003">(41) 3223-3003</a>
+              <span>Seg – Sáb · Almoço</span>
+            </div>
+            <a class="casa-card__cta" href="https://www.google.com/maps/search/?api=1&query=R.+Riachuelo,+102+Centro+Curitiba" target="_blank" rel="noopener">
+              Como chegar <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="casa-card" data-tilt>
+          <figure class="casa-card__img">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1000&q=80&auto=format&fit=crop" alt="Ambiente da unidade Vicente Machado" loading="lazy" />
+          </figure>
+          <div class="casa-card__body">
+            <p class="casa-card__tag">Centro</p>
+            <h3>Vicente Machado</h3>
+            <address>Av. Vicente Machado, 560<br />Centro · Curitiba, PR</address>
+            <div class="casa-card__meta">
+              <a href="tel:+554132335665">(41) 3233-5665</a>
+              <span>Seg – Sáb · Almoço</span>
+            </div>
+            <a class="casa-card__cta" href="https://www.google.com/maps/search/?api=1&query=Vicente+Machado,+560+Centro+Curitiba" target="_blank" rel="noopener">
+              Como chegar <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= CTA ======================= -->
+    <section class="cta">
+      <h2 class="cta__title">
+        <span data-split>Bateu fome?</span>
+        <span class="cta__sub" data-split><em>O buffet abre às 11h.</em></span>
+      </h2>
+      <a class="btn btn--primary btn--big" href="https://wa.me/554198210190" target="_blank" rel="noopener" data-magnetic>
+        <span class="btn__label">Fala com a gente</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="footer__label">Unidades</p>
+        <p>R. Riachuelo, 102 · Centro</p>
+        <p>Av. Vicente Machado, 560 · Centro</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__label">Contato</p>
+        <a href="tel:+554132233003">(41) 3223-3003</a>
+        <a href="https://wa.me/554198210190" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/jeitomineirorestaurante" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__label">Horário</p>
+        <p>Segunda a sábado</p>
+        <p>Almoço · 11h às 14h30</p>
+      </div>
+    </div>
+
+    <p class="footer__wordmark" aria-hidden="true" data-footer-wordmark>Jeito Mineiro</p>
+
+    <div class="footer__base">
+      <p>© 2026 Jeito Mineiro Restaurantes</p>
+      <p>Feito com fogo em Curitiba</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
